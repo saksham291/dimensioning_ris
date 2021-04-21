@@ -13,7 +13,7 @@ ArrayType=2;                       % Uniform Linear Array=1 or Uniform Planar Ar
 Tx_xyz=[1,1,1];                  % Tx coordinates (in meters)
 Rx_xyz=[51,1,1];                % Rx coordinates (in meters)
 %RIS_xyz=[5,2,2];       % RIS coordinates (in meters)
-Nsym = 10000;
+Nsym = 30000;
 shifts = 49;
 hei = 3;         %keep hei=2 for finding spread
 I = eye(Nr);
@@ -78,12 +78,12 @@ plot(x,M_ris(:,3))
 plot(x,M_no_ris(:,1))
 hold off
 %xlim([1 26])
-legend({'RIS, z=1 m','RIS, z=2 m','RIS, z=3 m','No RIS'},'Location','north')
-xlabel('Position of RIS (y)') 
-ylabel('System Throughput') 
+legend({'RIS, z=1 m','RIS, z=2 m','RIS, z=3 m','No RIS'},'Location','north','FontSize',13)
+xlabel('y (m)','FontSize',12) 
+ylabel('Achievable Rate [bit/s/Hz]','FontSize',12) 
 grid on
-%print -depsc epsFig2
-%save('custom_2_25m.mat')
+print -depsc epsFig2
+save('Data_Throughput_p.mat')
  
 
 
