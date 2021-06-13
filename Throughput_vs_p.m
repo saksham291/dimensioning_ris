@@ -79,8 +79,8 @@ plot(x,M_no_ris(:,1))
 hold off
 %xlim([1 26])
 legend({'RIS, z=1 m','RIS, z=2 m','RIS, z=3 m','No RIS'},'Location','north','FontSize',13)
-xlabel('y (m)','FontSize',12) 
-ylabel('Achievable Rate [bit/s/Hz]','FontSize',12) 
+xlabel('y (m)','FontSize',13) 
+ylabel('Achievable Rate [bit/s/Hz]','FontSize',13) 
 grid on
 print -depsc epsFig2
 save('Data_Throughput_p.mat')
