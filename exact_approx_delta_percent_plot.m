@@ -105,10 +105,10 @@ plot(f,perc_vals(1:5)*100)
 hold off
 ylim([50 100])
 %ylim([0 0.2])
-legend({'Analytical Model - Exact','Analytical Model - Piecewise','SimRIS'},'Location','southwest','FontSize',13)
+legend({'Exact','Piecewise','SimRIS'},'Location','southwest','FontSize',13)
 xlabel('q','FontSize',13) 
 %ylabel('Delta (\Delta)') 
 ylabel('Percentage (x*)','FontSize',13) 
 grid on
-matlab2tikz('Fig5.tex');
+%matlab2tikz('Fig5.tex');
 print -depsc delta_percent_all

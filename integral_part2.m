@@ -8,13 +8,13 @@ ys(q) = (2*(acot(q) + q*log(1 + 1/q^2)))/(q + 4*q^3)
 yp(q) = ((2*sqrt(1 - 4*q^2)*(1 + 24*q^2 + 16*q^4))/(4*(q + 4*q^3)^2)-(2*(2 + q^2)*(-1 + sqrt(1 - 4*q^2)))/(4*q^2*(1 + q^2)))
 fplot(ys*330,[0.04,0.44])
 hold on
-fplot(yp*100,[0.04,0.44])
+fplot(yp*110,[0.04,0.44])
 plot(p/25,M)
 hold off
-legend({'Approximate Model - Exact', 'Approximate Model - Piecewise','SimRIS'},'Location','north')
-ylim([0 inf])
+legend({'Exact', 'Piecewise','SimRIS'},'Location','north','FontSize',13)
+ylim([0 30000])
 grid on
-xlabel('q') 
-ylabel('P_{RIS}^{Av}')
+xlabel('q','FontSize',13) 
+ylabel('P_{RIS}^{Av}','FontSize',13)
 print -depsc pow_vs_q_all
-matlab2tikz('Fig4.tex');
+%matlab2tikz('Fig4.tex');

@@ -106,11 +106,11 @@ hold off
 % ylim([50 100])
 ylim([0 0.2])
 %legend({'Analytical Model - Exact','Analytical Model - piecewise','SimRIS'},'Location','southwest')
-legend({'Analytical Model - Exact','Analytical Model - Piecewise','SimRIS'},'Location','northwest','FontSize',13)
+legend({'Exact','Piecewise','SimRIS'},'Location','northwest','FontSize',13)
 xlabel('q','FontSize',13) 
 ylabel('Delta (\Delta)','FontSize',13) 
 %ylabel('Percentage (x*)') 
 grid on
-matlab2tikz('Fig6.tex');
+%matlab2tikz('Fig6.tex');
 %print -depsc delta_percent_all
 print -depsc delta_all
